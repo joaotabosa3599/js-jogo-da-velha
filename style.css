@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background: rgb(114,144,245);
+    font: normal 15pt arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+  }  
+  header {
+    color: white;
+    text-align: center;
+    font: bold 30pt arial;
+    margin-bottom: 20px;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+    width: 90%;       
+    max-width: 500px;    
+    height: auto;        
+    min-height: 600px;   
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.26);
+  }
+  #tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 350px; 
+  }
+.cell {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;  
+    cursor: pointer;
+    background-color: white;
+    width: 100%; 
+    height: 100%;
+  }
+  #container-hist-reset {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    gap: 15px;
+  }
+  /* A barra azul de histórico */
+  #hist {
+    background: rgb(133,199,250);
+    width: 100%;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    font: bold 18px arial;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+    text-align: center;
+    box-sizing: border-box;
+  }
+  /* O botão New Game */
+  #reset {
+    height: 45px;
+    width: 140px;
+    background-color: rgb(42,70,151);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    color: white;
+  }
+  #reset:active {
+    background-color: #ddd;
+    transform: translateY(2px);
+  }
+  #placar {
+    margin: 20px auto;
+    width: 80%; 
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgb(42,70,151);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+  }
+  #res {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(106,160,244);
+    font: bold 20pt arial;
+    padding: 10px;
+    color: white;
+    margin: 10px auto;
+    border-radius: 8px;
+    width: 90%;
+  }
+  footer {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+  }
